@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Sign In and Sign Up Forms</title>
+
+    <!-- Boxicons Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sign In Form  -->
+        <div class="form-container">
+            <form action="">
+
+                <h2 class="form-title">Sign In</h2>
+
+                <!-- Social Icons  -->
+                <div class="social-icons">
+                <a href="#"><i class='bx bxl-google'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+
+                <p class="form-text">Or use email and password</p>
+
+                <div class="input-container">
+                <label for="email" class="sr-only" hidden>Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" aria-label="Enter your email address">
+                <i class='bx bxs-envelope'></i>
+                </div>
+
+                <div class="input-container">
+                <label for="password" class="sr-only" hidden>Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" aria-label="Enter your password">
+                <i class='bx bxs-lock-alt'></i>
+                </div>
+
+                <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit">Sign In</button>
+            </form>
+
+            <!-- Panel  -->
+             <div class="panel left-panel">
+                <p>Welcome back!</p>
+                <button type="button" id="sign-in" role="button" aria-label="Sign In">Sign In</button>
+             </div>
+        </div>
+
+         <!-- Sign Up Form  -->
+         <div class="form-container">
+            <form action="">
+
+                <h2 class="form-title">Sign Up</h2>
+
+                <!-- Social Icons  -->
+                 <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                 </div>
+
+                 <p class="form-text">Or sign up using your email address</p>
+                 <div class="input-container">
+                    <label for="full_name" class="sr-only" hidden>Full Name</label>
+                    <input type="text" id="full_name" name="full_name" placeholder="Full Name" aria-label="Enter your names">
+                    <i class='bx bxs-envelope'></i>
+                 </div>
+
+                 <div class="input-container">
+                    <label for="email" class="sr-only" hidden>Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" aria-label="Enter your email address">
+                    <i class='bx bxs-envelope'></i>
+                 </div>
+
+                 <div class="input-container">
+                    <label for="password" class="sr-only" hidden>Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" aria-label="Enter your password">
+                    <i class='bx bxs-lock-alt'></i>
+                 </div>
+
+                 <button type="submit">Sign Up</button>
+            </form>
+
+            <!-- Panel  -->
+            <div class="panel right-panel">
+                <p>Don't have an account?</p>
+                <button type="button" id="sign-up" role="button" aria-label="Sign In">Sign Up</button>
+             </div>
+         </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
